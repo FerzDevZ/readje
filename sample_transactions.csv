@@ -1,0 +1,30 @@
+Date,Transaction Type,Reference,Card Name,Account,Description,Amount,Debit Account,Credit Account
+01/03/2019,Cash Outflow,KK-01,Surianto,5-102,Sewa kios untuk 3 bulan (Maret - Mei 2019),900000,5-102,1-101
+02/03/2019,Purchase,TB-NK-53,Toko BINTANG,1-201,Mesin Jahit Serbaguna merk Singer,800000,1-201,1-101
+02/03/2019,Purchase,TB-NK-53,Toko BINTANG,1-201,2x Mesin Jahit merk Butterfly,1500000,1-201,1-101
+02/03/2019,Purchase,TB-NK-53,Toko BINTANG,1-201,Mesin Obras,450000,1-201,1-101
+02/03/2019,Purchase,TB-NK-53,Toko BINTANG,1-203,Peralatan Rupa-Rupa,500000,1-203,1-101
+06/03/2019,Cash Outflow,KK-02,PDAM dan PLN,5-105,Tagihan untuk air dan listrik kios,100000,5-105,1-101
+07/03/2019,Purchase,TM01,Toko MAJU,5-103,Perlengkapan jahit,60000,5-103,2-101
+09/03/2019,Cash Outflow,KK-03,Suminah,5-101,Upah mingguan periode 1-8 Maret 2019,150000,5-101,1-101
+09/03/2019,Cash Inflow,KM-03,Pelanggan,4-101,Upah jahit dari langganan,850000,1-101,4-101
+12/03/2019,Purchase,M-NK0311,Toko MEKAR,5-104,Aneka perlengkapan rupa-rupa,50000,5-104,1-101
+15/03/2019,Sales Invoice,F0301,LIO TAILOR,4-102,Pekerjaan Obras periode 2-14 Maret 2019,200000,1-102,4-102
+16/03/2019,Cash Inflow,KM-04,Pelanggan,4-101,Upah jahit dari langganan,1250000,1-101,4-101
+17/03/2019,Cash Inflow,KM-05,LIO TAILOR,4-102,Pelunasan faktur no F0301 tanggal 15 Maret 2019,200000,1-101,1-102
+21/03/2019,Cash Outflow,KK-04,Toko MAJU,2-101,Pembayaran Faktur No. TM01 tanggal 7 Maret 2019,60000,2-101,1-101
+22/03/2019,Cash Outflow,KK-05,Anton Servis,5-106,Ongkos servis mesin jahit,50000,5-106,1-101
+23/03/2019,Cash Outflow,KK-06,Ny. Mulia,3-102,Pengambilan untuk keperluan pribadi,150000,3-102,1-101
+24/03/2019,Cash Outflow,KK-07,Suminah,5-101,Upah mingguan periode 9-23 Maret 2019,150000,5-101,1-101
+26/03/2019,Purchase,TM23,Toko MAJU,5-103,Perlengkapan jahit,150000,5-103,2-101
+27/03/2019,Cash Outflow,KK-08,Jamal,5-199,Iuran keamanan dan kebersihan lingkungan kios,150000,5-199,1-101
+28/03/2019,Cash Inflow,KM-06,Pelanggan,4-101,Upah jahit dari langganan,950000,1-101,4-101
+30/03/2019,Sales Invoice,F0302,LIO TAILOR,4-102,Pekerjaan Obras periode 16-29 Maret 2019,150000,1-102,4-102
+31/03/2019,Cash Outflow,KK-09,Ny. Mulia,5-101,Gaji bagian pembukuan/keuangan bulan Maret 2019,300000,5-101,1-101
+31/03/2019,Journal Entry,M-0301,-,4-101,Jasa jahit yang telah selesai tetapi belum diterima,150000,1-102,4-101
+31/03/2019,Journal Entry,M-0302,-,5-102,Sewa yang telah jatuh tempo untuk bulan maret,300000,5-102,2-101
+31/03/2019,Journal Entry,M-0303,-,5-107,Peralatan jahit dan peralatan rupa-rupa disusutkan,250000,5-107,1-202
+31/03/2019,Journal Entry,M-0304,-,2-201,Angsuran utang bank sebesar Rp 500.000,- sudah dibayarkan,500000,2-201,1-101
+31/03/2019,Journal Entry,M-0305,-,5-101,Upah karyawan minggu terakhir yang belum dibayarkan,150000,5-101,2-103
+31/03/2019,Journal Entry,M-0306,-,5-103,Perlengkapan jahit yang masih ada senilai Rp 100.000,-,100000,1-104,5-103
+31/03/2019,Journal Entry,M-0306,-,5-104,Perlengkapan rupa-rupa yang terpakai sebesar Rp 40.000,-,40000,5-104,1-105 

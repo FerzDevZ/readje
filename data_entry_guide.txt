@@ -1,0 +1,362 @@
+PANDUAN DATA ENTRY MYOB MULIA MODISTE
+=======================================
+
+1. CASH INFLOW (BUKTI KAS MASUK)
+==================================
+
+Langkah-langkah:
+1. Buka menu "Banking" > "Receive Money"
+2. Deposit To: Pilih "Kas" (1-101)
+3. Card: Pilih customer (Pelanggan/LIO TAILOR)
+4. Date: Masukkan tanggal transaksi
+5. Reference: Masukkan BKM No. (KM-01, KM-02, dll)
+6. Amount: Masukkan jumlah diterima
+7. Memo: Masukkan keterangan transaksi
+8. Account: Pilih revenue account (4-101/4-102)
+9. Klik "Record"
+
+Contoh Entry:
+- Date: 09/03/2019
+- Reference: KM-03
+- Card: Pelanggan
+- Amount: 850,000
+- Memo: Upah jahit dari langganan
+- Account: 4-101 Pendapatan Jahit
+
+2. CASH OUTFLOW (BUKTI KAS KELUAR)
+====================================
+
+Langkah-langkah:
+1. Buka menu "Banking" > "Spend Money"
+2. Pay From: Pilih "Kas" (1-101)
+3. Card: Pilih supplier
+4. Date: Masukkan tanggal transaksi
+5. Reference: Masukkan BKK No. (KK-01, KK-02, dll)
+6. Amount: Masukkan jumlah dibayar
+7. Memo: Masukkan keterangan transaksi
+8. Account: Pilih expense account sesuai jenis
+9. Klik "Record"
+
+Contoh Entry:
+- Date: 01/03/2019
+- Reference: KK-01
+- Card: Surianto
+- Amount: 900,000
+- Memo: Sewa kios untuk 3 bulan (Maret - Mei 2019)
+- Account: 5-102 Beban Sewa Kios
+
+3. SALES INVOICE (FAKTUR PENJUALAN)
+====================================
+
+Langkah-langkah:
+1. Buka menu "Sales" > "Enter Sales"
+2. Card: Pilih customer (LIO TAILOR)
+3. Date: Masukkan tanggal invoice
+4. Invoice No.: Masukkan No. Faktur (F0301, F0302)
+5. Terms: Pilih payment terms (n/15)
+6. Item: Pilih item/service
+7. Quantity: Masukkan jumlah
+8. Price: Masukkan harga per unit
+9. Account: Pilih revenue account (4-101/4-102)
+10. Klik "Record"
+
+Contoh Entry:
+- Date: 15/03/2019
+- Invoice No.: F0301
+- Card: LIO TAILOR
+- Terms: n/15
+- Item: OBR001 Jasa Obras
+- Quantity: 1
+- Price: 200,000
+- Account: 4-102 Pendapatan Obras
+
+4. PURCHASE BILL (FAKTUR PEMBELIAN)
+====================================
+
+Langkah-langkah:
+1. Buka menu "Purchases" > "Enter Purchases"
+2. Card: Pilih supplier
+3. Date: Masukkan tanggal bill
+4. Purchase No.: Masukkan No. Faktur supplier
+5. Terms: Pilih payment terms
+6. Item: Pilih item
+7. Quantity: Masukkan jumlah
+8. Price: Masukkan harga per unit
+9. Account: Pilih expense/asset account
+10. Klik "Record"
+
+Contoh Entry:
+- Date: 07/03/2019
+- Purchase No.: TM01
+- Card: Toko MAJU
+- Terms: n/15
+- Item: PLG001 Perlengkapan Jahit
+- Quantity: 1
+- Price: 60,000
+- Account: 5-103 Beban Perlengkapan Jahit
+
+5. JOURNAL ENTRY (BUKTI MEMORIAL)
+==================================
+
+Langkah-langkah:
+1. Buka menu "Accounts" > "Record Journal Entry"
+2. Date: Masukkan tanggal adjustment
+3. Reference: Masukkan BM No. (M-0301, M-0302, dll)
+4. Memo: Masukkan keterangan adjustment
+5. Debit Account: Pilih account yang didebit
+6. Credit Account: Pilih account yang dikredit
+7. Amount: Masukkan jumlah adjustment
+8. Klik "Record"
+
+Contoh Entry:
+- Date: 31/03/2019
+- Reference: M-0301
+- Memo: Jasa jahit yang telah selesai tetapi belum diterima
+- Debit Account: 1-102 Piutang Usaha
+- Credit Account: 4-101 Pendapatan Jahit
+- Amount: 150,000
+
+6. PAYMENT RECORDING
+====================
+
+A. Pay Bills (Pembayaran Hutang):
+1. Buka menu "Purchases" > "Pay Bills"
+2. Pilih supplier dan bill yang akan dibayar
+3. Masukkan payment details
+4. Klik "Record"
+
+B. Receive Money (Penerimaan Piutang):
+1. Buka menu "Sales" > "Receive Money"
+2. Pilih customer dan invoice yang akan dibayar
+3. Masukkan payment details
+4. Klik "Record"
+
+7. ADJUSTING ENTRIES
+=====================
+
+A. Accrued Expenses:
+- Debit: Expense Account
+- Credit: Liability Account
+
+B. Prepaid Expenses:
+- Debit: Asset Account
+- Credit: Expense Account
+
+C. Depreciation:
+- Debit: Depreciation Expense
+- Credit: Accumulated Depreciation
+
+D. Accrued Revenue:
+- Debit: Asset Account
+- Credit: Revenue Account
+
+8. CLOSING ENTRIES
+==================
+
+A. Close Revenue Accounts:
+- Debit: Revenue Account
+- Credit: Income Summary
+
+B. Close Expense Accounts:
+- Debit: Income Summary
+- Credit: Expense Account
+
+C. Close Income Summary:
+- Debit/Credit: Income Summary
+- Credit/Debit: Owner's Equity
+
+9. DATA VALIDATION
+==================
+
+Sebelum posting transaksi, pastikan:
+1. Date format benar (DD/MM/YYYY)
+2. Amount format benar (tanpa koma ribuan)
+3. Account numbers valid
+4. Card names valid
+5. Reference numbers unique
+6. Debit = Credit (untuk journal entries)
+
+10. ERROR HANDLING
+==================
+
+A. Import Errors:
+- Check CSV format
+- Verify column mapping
+- Review data validation
+- Check special characters
+
+B. Balance Errors:
+- Check opening balances
+- Review journal entries
+- Verify account types
+- Check transaction dates
+
+C. Report Issues:
+- Check date ranges
+- Verify account filters
+- Review report settings
+- Check data integrity
+
+11. BACKUP PROCEDURES
+=====================
+
+A. Manual Backup:
+1. File > Backup
+2. Pilih lokasi backup
+3. Set backup name
+4. Klik "Backup"
+
+B. Automatic Backup:
+1. File > Preferences
+2. Set backup schedule
+3. Pilih backup location
+4. Enable automatic backup
+
+12. REPORT GENERATION
+=====================
+
+A. Financial Reports:
+1. Reports > Financial Reports
+2. Pilih report type
+3. Set date range
+4. Klik "Generate"
+
+B. Management Reports:
+1. Reports > Management Reports
+2. Pilih report type
+3. Set filters
+4. Klik "Generate"
+
+C. Custom Reports:
+1. Reports > Custom Reports
+2. Design report layout
+3. Set parameters
+4. Save and generate
+
+13. DATA EXPORT
+===============
+
+A. Export to Excel:
+1. Reports > Export
+2. Pilih format Excel
+3. Set export options
+4. Klik "Export"
+
+B. Export to PDF:
+1. Reports > Export
+2. Pilih format PDF
+3. Set export options
+4. Klik "Export"
+
+14. SECURITY MEASURES
+=====================
+
+A. User Access:
+1. Set user permissions
+2. Create user accounts
+3. Assign access levels
+4. Monitor user activity
+
+B. Data Protection:
+1. Regular backups
+2. Password protection
+3. Data encryption
+4. Access logging
+
+15. MAINTENANCE
+===============
+
+A. Regular Tasks:
+1. Daily: Backup data
+2. Weekly: Review reports
+3. Monthly: Reconcile accounts
+4. Quarterly: Review setup
+
+B. System Maintenance:
+1. Update software
+2. Optimize database
+3. Clean temporary files
+4. Check system performance
+
+16. TROUBLESHOOTING
+===================
+
+A. Common Issues:
+1. Import errors: Check file format
+2. Balance errors: Review entries
+3. Report errors: Check filters
+4. Performance issues: Optimize system
+
+B. Support Resources:
+1. MYOB Help Center
+2. Community Forum
+3. Local Support
+4. Online Tutorials
+
+17. BEST PRACTICES
+==================
+
+A. Data Entry:
+1. Enter transactions daily
+2. Review entries before posting
+3. Use consistent naming
+4. Document procedures
+
+B. Reporting:
+1. Generate reports regularly
+2. Review for accuracy
+3. Archive old reports
+4. Share with stakeholders
+
+C. Security:
+1. Regular backups
+2. User access control
+3. Data protection
+4. Audit trails
+
+18. TRAINING CHECKLIST
+======================
+
+- [ ] Basic navigation
+- [ ] Data entry procedures
+- [ ] Report generation
+- [ ] Backup procedures
+- [ ] Error handling
+- [ ] Security measures
+- [ ] Troubleshooting
+- [ ] Best practices
+
+19. GO LIVE CHECKLIST
+=====================
+
+- [ ] All data imported
+- [ ] Opening balances set
+- [ ] Sample transactions entered
+- [ ] Reports generated
+- [ ] Users trained
+- [ ] Backup procedures tested
+- [ ] Security measures implemented
+- [ ] Support procedures established
+
+20. MONITORING
+==============
+
+A. Daily Monitoring:
+1. Check transaction entries
+2. Review cash flow
+3. Monitor balances
+4. Backup data
+
+B. Weekly Monitoring:
+1. Generate reports
+2. Review performance
+3. Check for errors
+4. Update procedures
+
+C. Monthly Monitoring:
+1. Financial statements
+2. Account reconciliation
+3. Performance analysis
+4. System maintenance
+
+Catatan: Pastikan untuk selalu backup data sebelum melakukan perubahan besar dan review semua entries sebelum posting. 

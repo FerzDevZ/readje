@@ -1,0 +1,9 @@
+Card Name,Card Type,Address,Phone,Email,Payment Terms,Default Account,Notes
+Toko MAJU,Supplier,Jl. Djuanda No 2 Pontianak,(0561) 888 666,maju@email.com,n/15,2-101,Supplies sewing materials
+Toko BINTANG,Supplier,Jl. H. Agus Salim No. 14 Pontianak,(0561) 101 222,bintang@email.com,Cash,2-101,Sewing machines and equipment
+Toko MEKAR,Supplier,Jl. Ahmad Yani II No. 16,0561-650011,mekar@email.com,Cash,2-101,Various accessories
+PDAM dan PLN,Supplier,Jl. Adisucipto No. 1A Sungai Raya,(0561) 712345,utilities@email.com,Monthly,2-101,Water and electricity
+Surianto,Supplier,Jl. Adisucipto No. 1A Sungai Raya,(0561) 712345,surianto@email.com,Quarterly,2-101,Kiosk rent
+Suminah,Supplier,Jl. Adisucipto No. 1A Sungai Raya,(0561) 712345,suminah@email.com,Weekly,5-101,Tailor employee
+Anton Servis,Supplier,Jl. Adisucipto No. 1A Sungai Raya,(0561) 712345,anton@email.com,On Demand,5-106,Sewing machine service
+Jamal,Supplier,Jl. Adisucipto No. 1A Sungai Raya,(0561) 712345,jamal@email.com,Monthly,5-199,Security and cleaning 

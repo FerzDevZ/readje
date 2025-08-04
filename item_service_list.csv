@@ -1,0 +1,14 @@
+Item Number,Item Name,Item Type,Description,Unit Price,Account,Notes
+JHT001,Jasa Jahit,Service,Sewing services for customers,150000,4-101,Per piece/item
+OBR001,Jasa Obras,Service,Embroidery services for LIO TAILOR,200000,4-102,Per package
+MES001,Mesin Jahit Serbaguna Singer,Asset,Singer multi-purpose sewing machine,800000,1-201,Fixed asset
+MES002,Mesin Jahit Butterfly,Asset,Butterfly sewing machine,750000,1-201,Fixed asset
+MES003,Mesin Obras,Asset,Overlock machine,450000,1-201,Fixed asset
+PRL001,Peralatan Rupa-Rupa,Asset,Miscellaneous equipment,500000,1-203,Fixed asset
+PLG001,Perlengkapan Jahit,Expense,Sewing supplies (thread, needles),60000,5-103,Consumable
+PLG002,Perlengkapan Rupa-Rupa,Expense,Miscellaneous supplies,50000,5-104,Consumable
+UTL001,Tagihan Air dan Listrik,Expense,Water and electricity bills,100000,5-105,Monthly utility
+SEWA001,Sewa Kios,Expense,Kiosk rent,300000,5-102,Quarterly payment
+GAJI001,Upah Karyawan,Expense,Employee wages,150000,5-101,Weekly payment
+SERV001,Servis Mesin Jahit,Expense,Sewing machine maintenance,50000,5-106,As needed
+IURAN001,Iuran Keamanan dan Kebersihan,Expense,Security and cleaning fee,150000,5-199,Monthly fee 

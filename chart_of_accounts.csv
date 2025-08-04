@@ -1,0 +1,29 @@
+Account Number,Account Name,Account Type,Description,Tax Code
+1-101,Kas,Asset,Cash on hand,-
+1-102,Piutang Usaha,Asset,Accounts Receivable,-
+1-103,Sewa Kios Dibayar Dimuka,Asset,Prepaid Rent,-
+1-104,Perlengkapan Jahit,Asset,Sewing Supplies,-
+1-105,Perlengkapan Rupa-Rupa,Asset,Miscellaneous Supplies,-
+1-201,Peralatan Jahit,Asset,Sewing Equipment,-
+1-202,Ak. Peny. Peralatan Jahit,Asset,Accumulated Depreciation - Sewing Equipment,-
+1-203,Peralatan Rupa-Rupa,Asset,Miscellaneous Equipment,-
+1-204,Ak. Peny. Peralatan Rupa-Rupa,Asset,Accumulated Depreciation - Miscellaneous Equipment,-
+2-101,Utang Usaha,Liability,Accounts Payable,-
+2-102,Utang Bunga,Liability,Interest Payable,-
+2-103,Utang Gaji,Liability,Salaries Payable,-
+2-201,Utang Bank,Liability,Bank Loan,-
+3-101,Modal Ny. Mulia,Equity,Ny. Mulia Capital,-
+3-102,Prive Ny. Mulia,Equity,Ny. Mulia Drawings,-
+3-999,Ikhtisar Laba Rugi,Equity,Income Summary,-
+4-101,Pendapatan Jahit,Income,Sewing Revenue,-
+4-102,Pendapatan Obras,Income,Embroidery Revenue,-
+5-101,Gaji dan Upah,Expense,Salaries and Wages,-
+5-102,Beban Sewa Kios,Expense,Rent Expense,-
+5-103,Beban Perlengkapan Jahit,Expense,Sewing Supplies Expense,-
+5-104,Beban Perlengkapan Rupa-Rupa,Expense,Miscellaneous Supplies Expense,-
+5-105,Beban Listrik dan Air,Expense,Electricity and Water Expense,-
+5-106,Beban Pemeliharaan Peralatan,Expense,Equipment Maintenance Expense,-
+5-107,Beban Peny. Peralatan Jahit,Expense,Depreciation Expense - Sewing Equipment,-
+5-108,Beban Peny. Peralatan Rupa-Rupa,Expense,Depreciation Expense - Miscellaneous Equipment,-
+5-109,Beban Bunga,Expense,Interest Expense,-
+5-199,Beban Rupa-Rupa,Expense,Miscellaneous Expense,- 

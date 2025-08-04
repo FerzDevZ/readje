@@ -1,0 +1,209 @@
+PANDUAN SETUP MYOB MULIA MODISTE
+====================================
+
+STEP 1: INSTALASI MYOB
+-----------------------
+1. Download MYOB AccountRight v19.4 atau v20 dari website resmi
+2. Install software sesuai sistem operasi (Windows/Mac)
+3. Aktivasi lisensi dengan kode yang diberikan
+4. Restart komputer jika diminta
+
+STEP 2: SETUP COMPANY FILE
+---------------------------
+1. Buka MYOB AccountRight
+2. Pilih "Create a new company file"
+3. Masukkan informasi perusahaan:
+   - Company Name: MULIA MODISTE
+   - Address: Jalan Adisucipto No. 1A Sungai Raya - Kubu Raya
+   - Phone: (0561) 712345
+   - Email: muliamodiste@gmail.com
+   - Website: (kosongkan)
+4. Set financial year: 1 Maret - 28 Februari
+5. Set currency: IDR (Indonesian Rupiah)
+6. Set tax settings sesuai kebutuhan
+7. Klik "Next" dan "Finish"
+
+STEP 3: IMPORT CHART OF ACCOUNTS
+---------------------------------
+1. Buka menu "Accounts" > "Accounts List"
+2. Klik "File" > "Import" > "Chart of Accounts"
+3. Pilih file: chart_of_accounts.csv
+4. Map columns:
+   - Account Number -> Account Number
+   - Account Name -> Account Name
+   - Account Type -> Account Type
+   - Description -> Description
+   - Tax Code -> Tax Code
+5. Klik "Import"
+6. Review dan pastikan semua account terimport dengan benar
+
+STEP 4: IMPORT CUSTOMER CARDS
+------------------------------
+1. Buka menu "Card File" > "Cards List"
+2. Pilih tab "Customer"
+3. Klik "File" > "Import" > "Customer Cards"
+4. Pilih file: customer_cards.csv
+5. Map columns:
+   - Card Name -> Card Name
+   - Card Type -> Card Type
+   - Address -> Address
+   - Phone -> Phone
+   - Email -> Email
+   - Payment Terms -> Payment Terms
+   - Default Account -> Default Account
+   - Notes -> Notes
+6. Klik "Import"
+7. Review dan pastikan semua customer terimport dengan benar
+
+STEP 5: IMPORT SUPPLIER CARDS
+------------------------------
+1. Buka menu "Card File" > "Cards List"
+2. Pilih tab "Supplier"
+3. Klik "File" > "Import" > "Supplier Cards"
+4. Pilih file: supplier_cards.csv
+5. Map columns sama seperti customer cards
+6. Klik "Import"
+7. Review dan pastikan semua supplier terimport dengan benar
+
+STEP 6: IMPORT ITEM/SERVICE LIST
+---------------------------------
+1. Buka menu "Sales" > "Items"
+2. Klik "File" > "Import" > "Item List"
+3. Pilih file: item_service_list.csv
+4. Map columns:
+   - Item Number -> Item Number
+   - Item Name -> Item Name
+   - Item Type -> Item Type
+   - Description -> Description
+   - Unit Price -> Unit Price
+   - Account -> Account
+   - Notes -> Notes
+5. Klik "Import"
+6. Review dan pastikan semua item terimport dengan benar
+
+STEP 7: SETUP OPENING BALANCES
+-------------------------------
+1. Buka menu "Accounts" > "Accounts List"
+2. Set opening balances untuk semua accounts:
+   - Kas: Rp 12,500,000 (modal awal)
+   - Piutang Usaha: Rp 0
+   - Sewa Kios Dibayar Dimuka: Rp 900,000
+   - Perlengkapan Jahit: Rp 100,000
+   - Perlengkapan Rupa-Rupa: Rp 40,000
+   - Peralatan Jahit: Rp 2,750,000
+   - Peralatan Rupa-Rupa: Rp 500,000
+   - Utang Usaha: Rp 0
+   - Utang Bank: Rp 7,500,000
+   - Modal Ny. Mulia: Rp 5,000,000
+3. Klik "Post" untuk memposting opening balances
+
+STEP 8: ENTER SAMPLE TRANSACTIONS
+---------------------------------
+1. Buka menu "Banking" > "Spend Money" untuk cash outflows
+2. Buka menu "Banking" > "Receive Money" untuk cash inflows
+3. Buka menu "Sales" > "Enter Sales" untuk sales invoices
+4. Buka menu "Purchases" > "Enter Purchases" untuk purchase bills
+5. Buka menu "Accounts" > "Record Journal Entry" untuk adjustments
+6. Enter semua transaksi dari file sample_transactions.csv
+
+STEP 9: VERIFY SETUP
+---------------------
+1. Buka menu "Reports" > "Financial Reports" > "Trial Balance"
+2. Pastikan trial balance balance (debit = credit)
+3. Review semua accounts dan pastikan saldo benar
+4. Generate laporan keuangan untuk verifikasi
+
+STEP 10: BACKUP DATA
+---------------------
+1. Buka menu "File" > "Backup"
+2. Pilih lokasi backup
+3. Set schedule backup otomatis
+4. Test restore untuk memastikan backup berfungsi
+
+STEP 11: USER TRAINING
+----------------------
+1. Training user untuk:
+   - Data entry (sales, purchases, banking)
+   - Report generation
+   - Backup procedures
+   - Troubleshooting
+2. Buat user manual sesuai kebutuhan
+3. Set user permissions jika diperlukan
+
+STEP 12: GO LIVE
+----------------
+1. Review semua setup
+2. Test semua fitur
+3. Backup data terakhir
+4. Go live dengan data real
+5. Monitor dan support
+
+TROUBLESHOOTING
+===============
+
+1. Import Errors:
+   - Check format CSV file
+   - Verify column mapping
+   - Review data validation
+   - Check special characters
+
+2. Balance Errors:
+   - Check opening balances
+   - Review journal entries
+   - Verify account types
+   - Check transaction dates
+
+3. Report Issues:
+   - Check date ranges
+   - Verify account filters
+   - Review report settings
+   - Check data integrity
+
+4. Performance Issues:
+   - Optimize database
+   - Regular maintenance
+   - Update software
+   - Check system requirements
+
+SUPPORT RESOURCES
+================
+
+1. MYOB Help Center: help.myob.com
+2. MYOB Community Forum: community.myob.com
+3. Local MYOB Support: Check MYOB Indonesia website
+4. Online Tutorials: MYOB Learning Center
+5. User Manual: MYOB Documentation
+
+CONTACT INFORMATION
+==================
+
+MYOB Support:
+- Website: www.myob.com
+- Phone: +61 3 9222 2555
+- Email: support@myob.com
+- Local Support: Check MYOB Indonesia website
+
+Technical Support:
+- Installation: MYOB Installation Guide
+- Setup: MYOB Setup Wizard
+- Data Migration: MYOB Data Migration Tool
+- Backup: MYOB Backup & Restore Guide
+
+CHECKLIST SETUP
+===============
+
+- [ ] Install MYOB AccountRight
+- [ ] Setup company information
+- [ ] Import chart of accounts
+- [ ] Import customer cards
+- [ ] Import supplier cards
+- [ ] Import item/service list
+- [ ] Enter opening balances
+- [ ] Enter sample transactions
+- [ ] Generate trial balance
+- [ ] Review financial reports
+- [ ] Setup backup schedule
+- [ ] Train users
+- [ ] Go live
+
+Catatan: Pastikan untuk backup data secara regular dan review setup sebelum go live. 
