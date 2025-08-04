@@ -150,6 +150,11 @@ Account Number,Account Name,Account Type,Description,Tax Code
 - `Description`: Deskripsi akun dalam bahasa Inggris
 - `Tax Code`: Kode pajak (kosong untuk semua)
 
+**Cara Mendapatkan Data:**
+- Data diambil dari dokumen "PETUNJUK PENYELESAIAN PRAKTIK AKUNTANSI PERUSAHAAN JASA"
+- Section III: DAFTAR AKUN (CHART OF ACCOUNTS)
+- Semua 25 akun sudah disesuaikan dengan format MYOB
+
 ### **2. customer_cards.csv**
 ```csv
 Card Name,Card Type,Address,Phone,Email,Payment Terms,Default Account,Notes
@@ -165,6 +170,11 @@ LIO TAILOR,Customer,Jl. Adisucipto Kompl Sakura Permai No 14 Sungai Raya,0561-61
 - `Payment Terms`: Syarat pembayaran (Cash, n/15)
 - `Default Account`: Account default untuk revenue
 - `Notes`: Catatan tambahan
+
+**Cara Mendapatkan Data:**
+- **Pelanggan**: Dari BUKTI KAS MASUK (KM-03, KM-04, KM-06) - "Diterima Dari: Pelanggan"
+- **LIO TAILOR**: Dari FAKTUR PENJUALAN (F0301, F0302) - "Kepada: LIO TAILOR"
+- Alamat dan kontak diambil dari dokumen transaksi
 
 ### **3. supplier_cards.csv**
 ```csv
@@ -182,6 +192,16 @@ Toko MAJU,Supplier,Jl. Djuanda No 2 Pontianak,(0561) 888 666,maju@email.com,n/15
 - `Default Account`: Account default untuk payable
 - `Notes`: Catatan tambahan
 
+**Cara Mendapatkan Data:**
+- **Toko MAJU**: Dari FAKTUR PENJUALAN dan BUKTI KAS KELUAR (KK-04)
+- **Toko BINTANG**: Dari NOTA KONTAN (TB-NK-53)
+- **Toko MEKAR**: Dari NOTA KONTAN (M-NK0311)
+- **PDAM dan PLN**: Dari BUKTI KAS KELUAR (KK-02)
+- **Surianto**: Dari BUKTI KAS KELUAR (KK-01)
+- **Suminah**: Dari BUKTI KAS KELUAR (KK-03, KK-07)
+- **Anton Servis**: Dari BUKTI KAS KELUAR (KK-05)
+- **Jamal**: Dari BUKTI KAS KELUAR (KK-08)
+
 ### **4. item_service_list.csv**
 ```csv
 Item Number,Item Name,Item Type,Description,Unit Price,Account,Notes
@@ -196,6 +216,18 @@ JHT001,Jasa Jahit,Service,Sewing services for customers,150000,4-101,Per piece/i
 - `Unit Price`: Harga per unit
 - `Account`: Account yang terkait
 - `Notes`: Catatan tambahan
+
+**Cara Mendapatkan Data:**
+- **Jasa Jahit**: Dari BUKTI KAS MASUK - "Upah jahit dari langganan"
+- **Jasa Obras**: Dari FAKTUR PENJUALAN - "Pekerjaan Obras"
+- **Mesin Jahit**: Dari NOTA KONTAN Toko BINTANG - "Mesin Jahit Serbaguna Singer", "Mesin Jahit Butterfly"
+- **Perlengkapan Jahit**: Dari FAKTUR PEMBELIAN - "perlengkapan jahit"
+- **Perlengkapan Rupa-Rupa**: Dari NOTA KONTAN - "Aneka perlengkapan rupa-rupa"
+- **Tagihan Air dan Listrik**: Dari BUKTI KAS KELUAR - "Tagihan untuk air dan listrik kios"
+- **Sewa Kios**: Dari BUKTI KAS KELUAR - "Sewa kios untuk 3 bulan"
+- **Upah Karyawan**: Dari BUKTI KAS KELUAR - "Upah mingguan"
+- **Servis Mesin Jahit**: Dari BUKTI KAS KELUAR - "ongkos servis mesin jahit"
+- **Iuran Keamanan**: Dari BUKTI KAS KELUAR - "iuran keamanan dan kebersihan"
 
 ### **5. sample_transactions.csv**
 ```csv
@@ -213,6 +245,13 @@ Date,Transaction Type,Reference,Card Name,Account,Description,Amount,Debit Accou
 - `Amount`: Jumlah transaksi
 - `Debit Account`: Account yang didebit
 - `Credit Account`: Account yang dikredit
+
+**Cara Mendapatkan Data:**
+- **BUKTI KAS MASUK (6 transaksi)**: Dari dokumen BUKTI KAS MASUK (KM-01 sampai KM-06)
+- **BUKTI KAS KELUAR (8 transaksi)**: Dari dokumen BUKTI KAS KELUAR (KK-01 sampai KK-09)
+- **FAKTUR PENJUALAN (2 transaksi)**: Dari dokumen FAKTUR PENJUALAN (F0301, F0302)
+- **FAKTUR PEMBELIAN (4 transaksi)**: Dari dokumen NOTA KONTAN dan FAKTUR PEMBELIAN
+- **BUKTI MEMORIAL (8 transaksi)**: Dari dokumen BUKTI MEMORIAL (M-0301 sampai M-0306)
 
 ## 🔧 IMPORT PROCEDURES
 
@@ -387,6 +426,29 @@ Date,Transaction Type,Reference,Card Name,Account,Description,Amount,Debit Accou
 4. **Backup**: Lakukan backup secara regular
 5. **Training**: Pastikan user terlatih sebelum go live
 6. **Support**: Siapkan prosedur support dan troubleshooting
+
+## 📋 DATA SOURCE DOCUMENTATION
+
+### **Dokumen Sumber Data:**
+1. **PETUNJUK PENYELESAIAN PRAKTIK AKUNTANSI PERUSAHAAN JASA** - Chart of Accounts
+2. **BUKTI KAS MASUK (KM-01 sampai KM-06)** - Cash inflows dan customers
+3. **BUKTI KAS KELUAR (KK-01 sampai KK-09)** - Cash outflows dan suppliers
+4. **FAKTUR PENJUALAN (F0301, F0302)** - Sales invoices dan customers
+5. **FAKTUR PEMBELIAN/NOTA KONTAN** - Purchase bills dan suppliers
+6. **BUKTI MEMORIAL (M-0301 sampai M-0306)** - Adjusting entries
+
+### **Metode Ekstraksi Data:**
+1. **Manual Reading**: Membaca langsung dari dokumen
+2. **OCR (Optical Character Recognition)**: Mengkonversi gambar ke teks
+3. **Structured Data Extraction**: Mengambil data terstruktur dari field-field tertentu
+
+### **Field yang Diekstrak:**
+- **Customer**: "Diterima Dari" pada BUKTI KAS MASUK
+- **Supplier**: "Dibayarkan kepada" pada BUKTI KAS KELUAR
+- **Amount**: "Jumlah Diterima/Dibayar"
+- **Date**: "Tanggal"
+- **Description**: "Keterangan"
+- **Document Number**: "BKM No./BKK No./No. Faktur"
 
 ## 🎯 GO LIVE PREPARATION
 
